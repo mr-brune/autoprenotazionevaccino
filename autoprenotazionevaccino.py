@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 import PIL.ImageGrab
 from webdriver_manager.chrome import ChromeDriverManager
-
+import winsound
 
 #inserire questi dati
 #########
@@ -67,4 +67,6 @@ except:
     im.show()
 
 print("prenotato")
-time.sleep(100000)
+while(True):
+    winsound.Beep(2000, 500)
+    time.sleep(2)
