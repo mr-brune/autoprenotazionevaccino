@@ -16,7 +16,6 @@ mail = ""
 numero = ""
 data = '//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div/table/tbody/tr[5]/td[5]/div/div[1]/a' #copy_xpath
 centro_vaccinale = '//*[@id="corpo2"]/button[5]'
-chromedriver = "" #pathordriver
 ##########
 
 
