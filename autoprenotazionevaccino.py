@@ -1,11 +1,6 @@
 from selenium import webdriver
-import time
-import requests 
 import re  
-from playsound import playsound
 import time
-from pygame import mixer
-
 import PIL.ImageGrab
 
 
@@ -22,7 +17,7 @@ login_button = '//*[@id="corpo1"]/div[4]/div[2]/input'
 login_submit = '//*[@id="corpo1"]/div[6]/div[2]/button'
 sambo = '//*[@id="corpo2"]/button[5]'
 a=0
-uno = '//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div/table/tbody/tr[5]/td[5]/div/div[1]/a'
+data = '//*[@id="calendar"]/div[2]/div/table/tbody/tr/td/div/div/div/table/tbody/tr[5]/td[5]/div/div[1]/a'
 
 bott = '//*[@id="corpo2"]/button'
 while(a == 0):
@@ -36,7 +31,7 @@ while(a == 0):
         time.sleep(3)
         driver.find_element_by_xpath(sambo).click()
         time.sleep(3)
-        driver.find_element_by_xpath(uno).click()
+        driver.find_element_by_xpath(data).click()
     except:
         print("An exception occurred")
         driver.refresh()
@@ -59,14 +54,11 @@ try:
     driver.find_element_by_xpath('//*[@id="corpo1"]/div[4]/div[2]/input').send_keys("brunelli")
     driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("marco")
     driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("marcibr20@gmail.com") #cambiare indirizzo pulsante
-    driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("3475941419")   #cambiare indirizzo pulsante
+    driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("3474951419")   #cambiare indirizzo pulsante
     driver.find_element_by_xpath('//*[@id="bottoneconferma"]').click()
 except:
     im = PIL.ImageGrab.grab()
     im.show()
-    
-mixer.init()
-mixer.music.load("/Users/marci/Downloads/file_example_MP3_5MG.mp3")
-mixer.music.play()
-while mixer.music.get_busy():  # wait for music to finish playing
-    time.sleep(100)
+
+print("prenotato")
+time.sleep(100000)
