@@ -58,8 +58,8 @@ while(a == 0):
 try:
     driver.find_element_by_xpath('//*[@id="corpo1"]/div[4]/div[2]/input').send_keys("brunelli")
     driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("marco")
-    driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("marcibr20@gmail.com")
-    driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("3475941419")
+    driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("marcibr20@gmail.com") #cambiare indirizzo pulsante
+    driver.find_element_by_xpath('//*[@id="corpo1"]/div[5]/div[2]/input').send_keys("3475941419")   #cambiare indirizzo pulsante
     driver.find_element_by_xpath('//*[@id="bottoneconferma"]').click()
 except:
     im = PIL.ImageGrab.grab()
