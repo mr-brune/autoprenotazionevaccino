@@ -50,8 +50,6 @@ while(a == 0):
         driver.find_element_by_xpath(bott).click()
         print("fatto")
         a = 1
-        im = PIL.ImageGrab.grab()
-        im.show()
     except:
         print("An exception occurred")
         driver.refresh()
