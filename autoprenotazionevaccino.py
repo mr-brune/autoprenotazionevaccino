@@ -1,5 +1,4 @@
-from selenium import webdriver
-import re  
+from selenium import webdriver 
 import time
 import PIL.ImageGrab
 from webdriver_manager.chrome import ChromeDriverManager
