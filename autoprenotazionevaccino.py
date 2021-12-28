@@ -2,6 +2,8 @@ from selenium import webdriver
 import re  
 import time
 import PIL.ImageGrab
+from webdriver_manager.chrome import ChromeDriverManager
+
 
 #inserire questi dati
 #########
@@ -18,7 +20,7 @@ chromedriver = "" #pathordriver
 ##########
 
 
-driver = webdriver.Chrome(chromedriver)
+driver = webdriver.Chrome(ChromeDriverManager().install())
 driver.get(sito_ulss)
 first_login = '//*[@id="react-root"]/section/main/article/div[2]/div[2]/p/a'
 fiscale = '//*[@id="cod_fiscale"]'
